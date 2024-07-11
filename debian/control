@@ -2,7 +2,7 @@ Source: sane-frontends
 Section: graphics
 Priority: optional
 Maintainer: Jörg Frings-Fürst <debian@jff.email>
-Standards-Version: 4.5.0
+Standards-Version: 4.6.2.0
 Rules-Requires-Root: no
 Build-Depends:
  debhelper-compat (= 13),
@@ -10,8 +10,8 @@ Build-Depends:
  libgtk2.0-dev,
  libsane-dev
 Homepage: http://www.sane-project.org
-Vcs-Git: git://jff.email/opt/git/sane-frontends.git
-Vcs-Browser: https://jff.email/cgit/sane-frontends.git
+Vcs-Git: git://git.jff.email/sane-frontends.git
+Vcs-Browser: https://git.jff.email/cgit/sane-frontends.git
 
 Package: sane
 Architecture: any

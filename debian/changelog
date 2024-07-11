@@ -1,8 +1,26 @@
-sane-frontends (1.0.14-16) UNRELEASED; urgency=medium
+sane-frontends (1.0.14-18) unstable; urgency=medium
 
-  * update
+  * New debian/patches/0145-ftbfs-impfuncdef.patch.
+     Fix FTBFS -Werror=implicit-function-declaration (Closes: #1066571).
+  * debian/copyright
+    - Add year 2024 to myself.
+  * debian/control:
+    - Change to new repository.
 
- -- Jörg Frings-Fürst <debian@jff.email>  Wed, 25 May 2022 15:14:33 +0800
+ -- Jörg Frings-Fürst <debian@jff.email>  Wed, 13 Mar 2024 20:45:20 +0100
+
+sane-frontends (1.0.14-17) unstable; urgency=medium
+
+  * debian/patches/0001-fix_missing_sane-config.patch:
+    - Fix FTBFS (Closes: #1031453).
+      Thanks to Lucas Nussbaum <lucas@debian.org>
+  * Declare compliance with Debian Policy 4.6.2.0 (No changes needed).
+  * debian/copyright:
+    - Add year 2023 to myself.
+  * debian/tests/control:
+    - Remove superficial test.
+
+ -- Jörg Frings-Fürst <debian@jff.email>  Fri, 17 Feb 2023 16:55:10 +0100
 
 sane-frontends (1.0.14-16) unstable; urgency=medium
 

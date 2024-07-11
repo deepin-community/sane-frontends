@@ -1,0 +1,31 @@
+Description: Fix FTBFS with enabled -Werror=implicit-function-declaration
+Author: Jörg Frings-Fürst <debian@jff.email>
+Bug-Debian: https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1066571
+Forwarded: https://gitlab.com/sane-project/frontends/-/issues/37
+Last-Update: 2024-03-13
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+Index: trunk/include/sane/sanei_debug.h
+===================================================================
+--- trunk.orig/include/sane/sanei_debug.h
++++ trunk/include/sane/sanei_debug.h
+@@ -95,7 +95,8 @@
+ #ifdef NDEBUG
+   
+ extern void sanei_debug_ndebug (int level, const char *msg, ...);
+-	
++
++
+ # define DBG_LEVEL	(0)
+ # define DBG_INIT()
+ # define DBG		sanei_debug_ndebug
+@@ -167,6 +168,9 @@ DBG_LOCAL (int level, const char *msg, .
+ # define DBG            DBG_LOCAL
+ 
+ extern void sanei_init_debug (const char * backend, int * debug_level_var);
++
++/* fix -Werror=implicit-function-declaration */
++int isfdtype(int fd, int fdtype);
+   
+                                   /** @hideinitializer*/
+ # define IF_DBG(x)      x
