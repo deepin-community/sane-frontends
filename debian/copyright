@@ -15,7 +15,7 @@ License: GPL-2+ with sane exception
 Files: debian/*
 Copyright: 1997-2002 Kevin Dalley <kevind@rahul.net>
            2002-2009 Julien BLACHE <jblache@debian.org>
-           2014-2019 Jörg Frings-Fürst <debian@jff.email>
+           2014-2024 Jörg Frings-Fürst <debian@jff.email>
 License: GPL-2+ with sane exception
 
 Files: include/*.h
