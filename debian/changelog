@@ -1,3 +1,13 @@
+sane-frontends (1.0.14-18.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Drop b-d on libgimp2.0-dev, copy gimp-2.0.m4 from
+    libgimp2.0-dev_2.10.38-2, set export ACLOCAL_PATH = $(CURDIR) in
+    debian/rules to let autoreconf find the m4 file and let dh_autoreconf
+    continue working. Closes: #1088081
+
+ -- Andreas Metzler <ametzler@debian.org>  Sat, 26 Jul 2025 16:35:40 +0200
+
 sane-frontends (1.0.14-18) unstable; urgency=medium
 
   * New debian/patches/0145-ftbfs-impfuncdef.patch.
